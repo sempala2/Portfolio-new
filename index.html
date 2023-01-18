@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQCSXH29D3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KQCSXH29D3');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/multiplatform.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="tophead">
+        <h3 class="logo">TANISH</h3>
+        <nav id="navi">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About Me</li></a>
+                <a href="projects.html"><li>Projects</li></a>
+                <a href="contact.html"><li>Contact Us</li></a>
+                <button><a href="contact.html" style="text-decoration: none; color: white;"> Hire Us!</a></button>
+            </ul>
+        </nav>
+      <img id="menu" class="menu" src="img/menu.svg" height="30px" width="30px" alt="">
+        </div>
+        <div class="root">
+            <canvas id='canv'></canvas>
+             <div class="me">
+                <h1 style="font-size: 45px; margin: 0; padding: 0;">I'M SSEMPALA TANISH</h1>
+                <p><strong>A Passionate Web Designer and full stack developer</strong></p>
+                <a href=""><button class="dwnbtn">Download Resume</button></a>
+                <a href="about.html" ><button class="exbtn"> Explore Me</button></a>
+            </div>
+        </div>
+
+
+        <script src="js/code.jquery.com_jquery-3.6.0.js"></script>
+        <script src="js/matrix.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu').click(function () {
+                    $('nav').toggleClass('active');
+                    $('.me').toggleClass('gone');
+                    $('.root').toggleClass('gone');
+                })
+            })
+        </script>
+</body>
+</html>

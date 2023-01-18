@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQCSXH29D3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KQCSXH29D3');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/multiplatform.jpg" type="favicon/ico" sizes="32x32"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Me</title>
+</head>
+<body>
+    <div class="tophead" style="position:absolute;">
+        <h3 class="logo">TANISH</h3>
+        <nav id="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <button><a href="contact.html" style="text-decoration: none; color: white;"> Hire Us!</a></button>
+            </ul>
+        </nav>
+      <img id="menu" class="menu" src="img/menu.svg" height="30px" width="30px" alt="">
+        </div>
+        <!----------------------------end of top--------------------------->
+        <h1 class="abt">About Me</h1>
+        <div class="about-me">
+            <div class="profile">
+                <div class="profile1"><img src="img/face.jpg" alt=""></div>
+            </div>
+            <div class="about-detail">
+                <p class="txt-abt">A Tech Enthusiast and a passionate Web Designer with a good experience in web development. Started the Coding journey back in 2017, and managed to acquire several skills. Also Did some Mobile App development but decided to focus on Web Designing </p>
+            </div>
+        </div>
+        <div class="skills">
+            <h2>skills</h2>
+            <ul class="s-ul">
+                <li class="s-li">Javascript</li>
+                <li class="s-li">jQuery</li>
+                <li class="s-li">Bootstrap</li>
+                <li class="s-li">PHP</li>
+                <li class="s-li">Java</li>
+                <li class="s-li">Python</li>
+                <li class="s-li">MySQL</li>
+            </ul>
+        </div>
+
+        <script src="js/code.jquery.com_jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.menu').click(function () {
+                    $('nav').toggleClass('active');
+                })
+            })
+        </script>
+        <script>
+            var words = ['A Tech Enthusiast and a passionate Web Designer with a good experience in web development. Started the Coding journey back in 2017, and managed to acquire several skills. Also Did some Mobile App development but decided to focus on Web Designing'],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        forwards = true,
+        skip_count = 0,
+        skip_delay = 50,
+        speed = 40;
+    var wordflick = function () {
+      setInterval(function () {
+        if (forwards) {
+          if (offset >= words[i].length) {
+            ++skip_count;
+            if (skip_count == skip_delay) {
+              forwards = false;
+              skip_count = 0;
+            }
+          }
+        }
+        else {
+          if (offset == 0) {
+            forwards = true;
+            i++;
+            offset = 0;
+            if (i >= len) {
+              i = 0;
+            }
+          }
+        }
+        part = words[i].substr(0, offset);
+        if (skip_count == 0) {
+          if (forwards) {
+            offset++;
+          }
+          else {
+            offset--;
+          }
+        }
+        $('.txt-abt').text(part);
+      },speed);
+    };
+    
+    $(document).ready(function () {
+      wordflick();
+    });
+        </script>
+</body>
+</html>

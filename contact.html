@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KQCSXH29D3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KQCSXH29D3');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/multiplatform.jpg" type="favicon/ico" sizes="32x32"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div class="tophead" style="position: unset;">
+        <h3 class="logo">TANISH</h3>
+        <nav id="navi">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <button><a href="contact.html" style="text-decoration: none; color: white;"> Hire Us!</a></button>
+            </ul>
+        </nav>
+      <img id="menu" class="menu" src="img/menu.svg" height="30px" width="30px" alt="">
+        </div>
+        <canvas id="canv" class="go"></canvas>
+        <div class="main-contact go">
+            <div class="inf-contact">
+                <h3 style="font-size: x-large;">Contact Us</h3>
+                <p>Contact Us and setup your  dream project up and running in no time from small scale to large scale business projects<br>We are here to help</p>
+                <div class="contact-me">
+                    <img src="img/contact-call.svg" alt="PhoneCall">
+                    <p><span style="font-size: larger;">Call Me</span><br>+256 708 162 770</p>
+                </div>
+                <div class="contact-me">
+                    <img src="img/email.svg" alt="Email">
+                    <p><span style="font-size: larger;">Email</span><br>SempalaAbdulkarim@gmail.com</p>
+                </div>
+                <div class="contact-me">
+                    <img src="img/location.svg" alt="Address">
+                    <p><span style="font-size: larger;">Find Me</span><br>Entebbe</p>
+                </div>
+            </div>
+            <div class="send-contact">
+                <h2 style="font-size: x-large;">Drop A Line</h2>
+                <form action="mailto:sempalaabdulkarim@gmail.com"
+                method="POST"
+                enctype="multipart/form-data"
+                name="EmailForm">
+                    <div class="flex">
+                    <input type="text" name="name" required placeholder="Name">
+                    <input type="email" name="email" id="" required placeholder="Email Address">
+                    </div>
+                    <div class="flex">
+                        <input type="tel" name="number" id="" placeholder="Tel +*** *** *** ****">
+                        <input type="text" name="" id="" placeholder="Budget">
+                    </div>
+                    <div class="flex-down">
+                        <textarea type="text" name="message:" class="input" required id="" placeholder="message"></textarea>
+                        <input type="submit" value="submit" class="btn-submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js/code.jquery.com_jquery-3.6.0.js"></script>
+        <!--<script src="js/matrix.js"></script>-->
+        <script>
+            $(document).ready(function () {
+                $('.menu').click(function () {
+                    $('nav').toggleClass('active');
+                    $('.me').toggleClass('gone');
+                    
+                })
+            })
+        </script>
+</body>
+</html>
