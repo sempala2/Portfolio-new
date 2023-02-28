@@ -12,10 +12,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee|Gudea">
     <link rel="shortcut icon" href="img/me.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Services</title>
-    
+    <style>
+        .project{
+            display: flex;
+            margin: 0;
+            margin-bottom: 20px;
+            padding: 0;
+            width: 75%;
+            margin-left: 5%;
+            height: 300px;
+           
+        }
+        .project2{
+            display: flex;
+            margin: 0;
+            margin-bottom: 20px;
+            padding: 0;
+            width: 75%;
+            margin-right: 5%;
+            float: right;
+            height: 300px;
+           
+        }
+         .info{
+            width: 40%;
+            
+            border: none;
+        }
+         .info{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tags{
+            width: 100%;
+            float: left;
+            margin-left: 50px;
+        }
+        .tags i{
+            background-color: #565656;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-size: .8em;
+            border: none;
+        }
+        .project button{
+            padding: 7px 50px;
+            border: 1px solid rgb(0, 108, 14);
+            background-color: #4e4e4e;
+            color:rgb(227, 227, 227);
+            border-radius: 2px;
+            font-size: large;
+            transform: translateY(100%);
+            display: inline-block;
+        }
+        .project .img{
+            width: 60%;
+            background-image: url(img/show.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .project2 button{
+            padding: 7px 50px;
+            border: 1px solid rgb(0, 108, 14);
+            background-color: #4e4e4e;
+            color:rgb(227, 227, 227);
+            border-radius: 2px;
+            font-size: large;
+            transform: translateY(100%);
+            display: inline-block;
+        }
+        .project2 .img{
+            width: 60%;
+            background-image: url(img/show.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    </style>
 </head>
 <body>
     <div class="tophead" style="position:absolute;">
@@ -26,42 +108,56 @@
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
-                <button><a href="contact.html" style="text-decoration: none; color: white;"> HIRE ME!</a></button>
+                <button><a href="contact.html" style="text-decoration: none; color: white;"> Resume</a></button>
             </ul>
         </nav>
       <img id="menu" class="menu" src="img/menu.svg" height="30px" width="30px" alt="">
         </div>
             <div class="main">
-               <center>
-                <div class="watermark">
-                    <h1 style="text-align: center;">Under Development</h1>
-                </div>
-                    <h1 >Projects</h1>
-                    <div class="projects">
-                        <div class="objects">
-                        <div class="object active">
-                            <img src="img/web_dev.jfif" alt="">
-                            <h3>Project</h3>
+                    <h1 style="font-family: Handlee; color: green; font-size: 3em; width: 100%; text-align: center;" >My Projects</h1>
+                    <div class="project">
+                        <div class="info">
+                            <h2 style="margin: 0; padding-top: 5px; font-family: Gudea; color: green;">Events Decoration Website</h2>
+                            <p style="padding: 10px; text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <div class="tags">
+                                <i>HTML</i>
+                                <i>CSS</i>
+                                <i>JS</i>
+                            </div>
+                            <button>Visit</button>
                         </div>
-                        <div class="object">
-                            <img src="img/web_dev.jfif" alt="">
-                            <h3>Sample Object</h3>
-                        </div>
-                        <div class="object">
-                            <img src="img/web_dev.jfif" alt="">
-                            <h3>Sample Object</h3>
-                        </div>
-                        <div class="object">
-                            <img src="img/web_dev.jfif" alt="">
-                            <h3>Sample Object</h3>
-                        </div>
+                        <div class="img"></div>
                     </div>
-                        <div class="slider"><div class="load active"></div><div class="load"></div><div class="load"></div><div class="load"></div></div>
-                        
+   <!----------------------------------------------------------------------------------------> 
+   <div class="project2">
+    <div class="img"></div>
+    <div class="info">
+        <h2 style="margin: 0; padding-top: 5px; font-family: Gudea; color: green;">Events Decoration Website</h2>
+        <p style="padding: 10px; text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <div class="tags">
+            <i>HTML</i>
+            <i>CSS</i>
+            <i>JS</i>
+        </div>
+        <button>Visit</button>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------->
+                    <div class="project">
+                        <div class="info">
+                            <h2 style="margin: 0; padding-top: 5px; font-family: Gudea; color: green;">Events Decoration Website</h2>
+                            <p style="padding: 10px; text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <div class="tags">
+                                <i>HTML</i>
+                                <i>CSS</i>
+                                <i>JS</i>
+                            </div>
+                            <button>Visit</button>
+                        </div>
+                        <div class="img"></div>
                     </div>
-<!-----------------------------prjects end--------------------------------------------->
-                    
-            </div></center>
+  <!---------------------------------------------------------------------------------------------------------------->                  
+            </div>
             <script src="js/code.jquery.com_jquery-3.6.0.js"></script>
         <script>
             $(document).ready(function () {
