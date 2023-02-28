@@ -36,4 +36,4 @@ function matrix () {
   });
 }
 
-setInterval(matrix, 50);
+setInterval(matrix, 70);
