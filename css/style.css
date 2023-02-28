@@ -32,7 +32,6 @@ body{
     border-color: green;
 }
 .main{
-    user-select: none;
     margin-top: 80px;
     
 }
