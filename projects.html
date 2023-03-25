@@ -42,7 +42,6 @@
         }
          .info{
             width: 40%;
-            
             border: none;
         }
          .info{
@@ -98,7 +97,24 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-
+        @media (max-width:600px) {
+            .project{
+                flex-direction: column;
+                height: fit-content;
+            }
+            .project .img{
+            width: 100%;
+            height: auto;
+            background-image: url(img/show.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .project .info{
+            width: 100%;
+            border: none;
+        }
+        }
     </style>
 </head>
 <body>
