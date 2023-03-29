@@ -18,6 +18,12 @@
     <link rel="icon" href="img/me.jpg" type="favicon/ico" sizes="32x32"/>
     <link rel="stylesheet" href="css/style.css">
     <title>About Me</title>
+    <style>
+      .blob {
+        width: calc(fit-content +80px) ;
+        border-radius: 58% 53% 35% 54% / 50% 80% 63% 50%;
+      }
+    </style>
 </head>
 <body>
     <div class="tophead" style="position:absolute;">
@@ -34,7 +40,7 @@
       <img id="menu" class="menu" src="img/menu.svg" height="30px" width="30px" alt="">
         </div>
         <!----------------------------end of top--------------------------->
-        <h1 class="abt">About Me</h1>
+        <h1 class="abt green">About Me</h1>
         <div class="about-me">
             <div class="profile">
                 <div class="profile1"><img src="img/me.jpg" alt=""></div>
@@ -44,7 +50,7 @@
             </div>
         </div>
         <div class="skills">
-            <h2>Programming Languages</h2>
+            <h2 class="green">Programming Languages</h2>
             <ul class="s-ul">
                 <li class="s-li"></li>
                 <li class="s-li"></li>
@@ -56,7 +62,7 @@
             </ul>
         </div>
         <div class="skills">
-          <h2>Design Tools</h2>
+          <h2 class="green">Design Tools</h2>
           <ul class="s-ul">
               <li class="s-li1"></li>
               <li class="s-li1"></li>
@@ -79,14 +85,14 @@
             })
         </script>
         <script>
-            var words = ['A Tech Enthusiast and a passionate Web Designer with a good experience in web development. Started the Coding journey back in 2017, and managed to acquire several skills. Also Did some Mobile App development but decided to focus on Web Designing'],
+            var words = ['A Tech Enthusiast and a passionate Web Designer with extensive hands on experience in web development and maintenance. Started the Coding journey back in 2017, acquiring many new skill sets along the way. Also have some Mobile App development experience but am now purely focused on Web Designing.'],
         part,
         i = 0,
         offset = 0,
         len = words.length,
         forwards = true,
         skip_count = 0,
-        skip_delay = 50,
+        skip_delay = 100000,
         speed = 40;
     var wordflick = function () {
       setInterval(function () {
@@ -124,6 +130,10 @@
     
     $(document).ready(function () {
       wordflick();
+      function blob() {
+                $(".profile1").toggleClass("blob").delay(1);
+        }
+        setInterval(blob,2000)
     });
         </script>
 </body>

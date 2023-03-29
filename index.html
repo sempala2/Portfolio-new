@@ -1,62 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BKQECZDFEC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BKQECZDFEC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-BKQECZDFEC');
-</script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gupter">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/me.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+      gtag("config", "G-BKQECZDFEC");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Gupter"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/me.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Portfolio</title>
-</head>
-<body>
+    <style>
+      @media (min-width:900px) {
+        .blob {
+        height: 41%;
+        width: 20%;
+        transition: ease-in-out 1.8s;
+        border-radius: 58% 53% 35% 54% / 50% 80% 63% 50%;
+      }
+      }
+      
+    </style>
+  </head>
+  <body>
     <div class="tophead">
-        <h3 class="logo">TANISH</h3>
-        <nav id="navi">
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="about.html"><li>About Me</li></a>
-                <a href="projects.html"><li>Projects</li></a>
-                <a href="contact.html"><li>Contact Me</li></a>
-                <button><a href="contact.html" style="text-decoration: none; color: white;"> Resume</a></button>
-            </ul>
-        </nav>
-      <img id="menu" class="menu" src="img/menu.svg" height="30px" width="30px" alt="">
-        </div>
-        <div class="root">
-            <canvas id='canv'></canvas>
-             <div class="me">
-                <h1 style="font-size: 2.5em; text-align: center; font-family: Gupter; margin: 0; padding: 0;">I AM SSEMPALA TANISH</h1>
-                <p style="text-align: center; font-size: 1.5em; padding: 0; margin: 0;" >A Passionate Software Engineer/ <br>UI/UX Designer</p>
-                <a href=""><button class="dwnbtn">Download Resume</button></a>
-                <a href="about.html" ><button class="exbtn"> Explore</button></a>
-            </div>
-            <div class="face">
-            <img src="img/me.jpg" alt="">
-            </div>
-        </div>
+      <h3 class="logo">TANISH</h3>
+      <nav id="navi">
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About Me</li></a>
+          <a href="projects.html"><li>Projects</li></a>
+          <a href="contact.html"><li>Contact Me</li></a>
+          <button>
+            <a href="contact.html" style="text-decoration: none; color: white">
+              Resume</a
+            >
+          </button>
+        </ul>
+      </nav>
+      <img
+        id="menu"
+        class="menu"
+        src="img/menu.svg"
+        height="30px"
+        width="30px"
+        alt=""
+      />
+    </div>
 
+    <div class="root">
+      <canvas id="canv"></canvas>
+      <div class="me">
+        <h1>I AM SSEMPALA TANISH</h1>
+        <p>
+          A Passionate Software Engineer/ <br />UI/UX Designer
+        </p>
+        <a href=""><button class="dwnbtn">Download Resume</button></a>
+        <a href="projects.html"
+          ><button class="exbtn">Explore Projects</button></a
+        >
+      </div>
+      <div class="face" onload="blob()">
+        <img src="img/me.jpg" alt="" />
+      </div>
+    </div>
 
-        <script src="js/code.jquery.com_jquery-3.6.0.js"></script>
-        <script src="js/matrix.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('.menu').click(function () {
-                    $('nav').toggleClass('active');
-                    $('.me').toggleClass('gone');
-                    $('.root').toggleClass('gone');
-                })
-            })
-        </script>
-</body>
+    <script src="js/code.jquery.com_jquery-3.6.0.js"></script>
+    <script src="js/matrix.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu").click(function () {
+          $("nav").toggleClass("active");
+          $(".me").toggleClass("gone");
+          $(".root").toggleClass("gone");
+        });
+        function blob() {
+          $(".face").toggleClass("blob").delay(1);
+          $("img").toggleClass("blob").delay(1);
+        }
+        setInterval(blob, 2000);
+      });
+    </script>
+  </body>
 </html>
