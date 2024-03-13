@@ -287,6 +287,9 @@ nav ul button:hover {
   transition: ease 0.5s;
   top: 30%;
   color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   left: 5%;
   align-self: center;
 }
@@ -296,6 +299,9 @@ nav ul button:hover {
   font-family: Gupter;
   margin: 0;
   padding: 0;
+}
+.me a{
+  align-self: center;
 }
 .me p {
   text-align: center;
@@ -309,27 +315,11 @@ nav ul button:hover {
 .me:hover {
   padding: 3rem;
 }
-.exbtn {
-  width: 150px;
-  height: 60px;
-  border-radius: 10px;
-  color: black;
-  transition: ease-out 0.5s;
-  font-size: medium;
-  background: transparent;
-  border: 2px solid #fff;
-}
-.exbtn:hover {
-  background-color: green;
-  cursor: pointer;
-  transition: ease 0.5s;
-  font-size: small;
-}
 .dwnbtn {
   width: 150px;
   height: 60px;
   border-radius: 10px;
-  color: black;
+  color: rgb(208, 208, 208);
   transition: ease-out 0.5s;
   font-size: medium;
   background: green;
@@ -341,6 +331,7 @@ nav ul button:hover {
   font-size: small;
   transition: ease-in 0.5s;
   cursor: pointer;
+  color: black;
 }
 .main-contact {
   position: absolute;
